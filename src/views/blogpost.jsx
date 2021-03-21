@@ -1,6 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
+import sanityClient from '../client/client'
+
 export default function Blogpost() {
+  const [post, setePost] = useState()
+  let posts = post || ''
+
+
+  useEffect(() => {
+    sanityClient.fetch(`*[_type=="post"]{
+      title,
+      slug,
+      mainImage{
+        asset->{
+          _id,
+          url
+        },
+        alt
+      }
+    }`).then((data) => setePost(data))
+  })
+
+
   const HumbergerClick = () => {
 
     let a = document.getElementsByClassName("menu")[0]
@@ -14,6 +35,7 @@ export default function Blogpost() {
     document.body.classList.remove('active')
   }
 
+  // console.log(posts)
   return (
     <div>
       {/* <div class="preloader">
@@ -120,21 +142,41 @@ export default function Blogpost() {
       </div>
 
 
-      <header style={{ marginTop: "7rem" }}>
+      <header style={{ marginTop: "5rem" }}>
         <div class="container">
-          <div class="row" style={{ position: "relative" }}>
+          <div class="row" style={{ position: "relative", bottom: "10rem" }}>
             <div class="col-md-12 col-sm-12">
               {/* <img style={{ width: "10rem", height: "12rem" }} src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile" /> */}
               <hr />
-              <h1 class="tm-title bold shadow">Hi, I am Julia</h1>
-              <h1 class="white bold shadow">Creative Director</h1>
+              <h1 class="tm-title bold shadow">BLOG POSTS</h1>
+              <h1 class="white bold shadow">Welcome to my blog posts</h1>
             </div>
           </div>
         </div>
       </header>
-      <section class="container">
+      <section class="container" style={{ position: "relative", bottom: "100px" }}>
         <div class="row">
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
+          {
+
+            post !== undefined && post !== null ? post.map((items, index) => (
+              <Link to={"/post/" + items.slug.current} key={items.slug.current}>
+                <div class="col-md-4 col-sm-6" style={{ padding: "1rem", alignItems: "center", textAlign: "center" }} >
+                  <div class="about">
+                    <h3 class="accent">{index}</h3>
+                    <h2>Bootstrap v3.3.5</h2>
+                    {/* <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p> */}
+                    <img src={items.mainImage.asset.url} width="300" />
+                  </div>
+                </div>
+              </Link>
+            )) : ''
+
+          /* {posts.map((items) => (
+        
+          )) || '' */}
+
+
+          {/* <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
             <div class="about">
               <h3 class="accent">Easy Profile</h3>
               <h2>Bootstrap v3.3.5</h2>
@@ -175,14 +217,7 @@ export default function Blogpost() {
               <h2>Bootstrap v3.3.5</h2>
               <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

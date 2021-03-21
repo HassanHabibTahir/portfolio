@@ -59,7 +59,7 @@ h2 {
 .about,.skills,
 .education,.languages,
 .contact, .experience {
-  padding: 40px;
+  padding: 10px;
   min-height: 330px;
 }
 
