@@ -158,14 +158,17 @@ export default function Blogpost() {
         <div class="row">
           {
 
-            post !== undefined && post !== null ? post.map((items, index) => (
+            post !== undefined && post !== null ? post && post.map((items, index) => (
               <Link to={"/post/" + items.slug.current} key={items.slug.current}>
-                <div class="col-md-4 col-sm-6" style={{ padding: "1rem", alignItems: "center", textAlign: "center" }} >
+                <div key={index} class="col-md-4 col-sm-6" style={{ padding: "1rem", alignItems: "center", textAlign: "center" }} >
                   <div class="about">
-                    <h3 class="accent">{index}</h3>
-                    <h2>Bootstrap v3.3.5</h2>
+                    {/* <h3 class="accent">{index}</h3> */}
+                    <h2></h2>
                     {/* <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p> */}
-                    <img src={items.mainImage.asset.url} width="300" />
+                    <img src={items.mainImage.asset.url}
+                      alt={items.mainImage.alt}
+                      width="300" />
+                    <h3>{items.title}</h3>
                   </div>
                 </div>
               </Link>

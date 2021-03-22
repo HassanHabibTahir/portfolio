@@ -22,6 +22,9 @@ function App() {
         <Route exact path="/blog">
           <Blogpost />
         </Route>
+         <Route exact path="/post/:slug">
+
+        </Route>
       </Switch>
     </Router>
   );
