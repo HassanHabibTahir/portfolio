@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './views/route';
 import Blogpost from './views/blogpost'
+import Project from './views/project';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,8 +24,11 @@ function App() {
         <Route exact path="/blog">
           <Blogpost />
         </Route>
-         <Route exact path="/post/:slug">
+        <Route exact path="/post/:slug">
 
+        </Route>
+        <Route exact path="/project">
+          <Project />
         </Route>
       </Switch>
     </Router>
