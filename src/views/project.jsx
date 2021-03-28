@@ -159,7 +159,6 @@ export default function Blogpost() {
           <div class="row" style={{ position: "relative", bottom: "10rem" }}>
             <div class="col-md-12 col-sm-12">
               {/* <img style={{ width: "10rem", height: "12rem" }} src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile" /> */}
-              <hr />
               <h1 class="tm-title bold shadow">Project Page!</h1>
               {/* <h1 class="white bold shadow">Project Page!</h1> */}
             </div>
@@ -186,8 +185,8 @@ export default function Blogpost() {
                   <span style={{ color: "white" }}>  <strong >Type </strong> :{" "} {items.projectType} </span>
                   <br />
                   <br />
-                  <p>{items.description}</p>
-                  <a href={items.link}>
+                  <p style={{ color: "white" }}>{items.description}</p>
+                  <a href={items.link} target="_blank">
                     <span>View the Project</span>
                   </a>
                   {/* <img src={items.mainImage.asset.url}

@@ -3,13 +3,13 @@ import './App.css';
 import Home from './views/route';
 import Blogpost from './views/blogpost'
 import Project from './views/project';
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import SinglePost from './views/SinglePost';
 function App() {
 
 
@@ -25,7 +25,7 @@ function App() {
           <Blogpost />
         </Route>
         <Route exact path="/post/:slug">
-
+          <SinglePost />
         </Route>
         <Route exact path="/project">
           <Project />

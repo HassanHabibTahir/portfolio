@@ -146,7 +146,6 @@ export default function Blogpost() {
           <div class="row" style={{ position: "relative", bottom: "10rem" }}>
             <div class="col-md-12 col-sm-12">
               {/* <img style={{ width: "10rem", height: "12rem" }} src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile" /> */}
-              <hr />
               <h1 class="tm-title bold shadow">BLOG POSTS</h1>
               <h1 class="white bold shadow">Welcome to my blog posts</h1>
             </div>
@@ -164,7 +163,7 @@ export default function Blogpost() {
                     {/* <h3 class="accent">{index}</h3> */}
                     {/* <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p> */}
                     <h4 style={{ color: "white" }}>{items.title}</h4>
-                    <br />  
+                    <br />
                     <img src={items.mainImage.asset.url}
                       alt={items.mainImage.alt}
                       width="300" />

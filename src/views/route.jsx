@@ -130,7 +130,6 @@ export default function Home() {
           <div class="row" style={{ position: "relative", bottom: "10rem" }}>
             <div class="col-md-12 col-sm-12">
               <img style={{ width: "10rem", height: "12rem" }} src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile" />
-              <hr />
               <h1 class="tm-title bold shadow">HASSAN HABIB TAHIR</h1>
               <h1 class="white bold shadow">Web & Mobile Developer</h1>
             </div>
