@@ -187,63 +187,16 @@ export default function Blogpost() {
                   <br />
                   <p style={{ color: "white" }}>{items.description}</p>
                   <a href={items.link} target="_blank">
-                    <span>View the Project</span>
+                    <span>View the Project  <span style={{ color: "yellow" }}> &#x261B;</span></span>
                   </a>
-                  {/* <img src={items.mainImage.asset.url}
-                      alt={items.mainImage.alt}
-                      width="300" /> */}
+
                 </div>
               </div>
               // </Link>
-            )) : '.......loading'
-
-          /* {posts.map((items) => (
-        
-          )) || '' */}
+            )) : '.......loading'}
 
 
-          {/* <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div> */}
+
         </div>
       </section>
 
@@ -251,14 +204,13 @@ export default function Blogpost() {
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12">
-              <p>Copyright &copy; 2084 Your Easy Profile</p>
-              <ul class="social-icons">
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-google-plus"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>
-                <li><a href="#" class="fa fa-dribbble"></a></li>
-                <li><a href="#" class="fa fa-github"></a></li>
-                <li><a href="#" class="fa fa-behance"></a></li>
+              <p>Copyright &copy; {new Date().getFullYear()}</p>
+              <ul class="social-icons" >
+                <li style={{ margin: ".5rem" }}> <a href="https://www.facebook.com/LearnWithTeachField" target="_blank" class="fa fa-facebook"></a></li>
+
+                <li style={{ margin: ".5rem" }}> <a href="https://twitter.com/HassanHabibTah1" target="_blank" class="fa fa-twitter"></a></li>
+
+                <li style={{ margin: ".5rem" }}> <a href="https://github.com/HassanHabibTahir" target="_blank" class="fa fa-github"></a></li>
               </ul>
             </div>
           </div>

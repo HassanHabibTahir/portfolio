@@ -39,9 +39,6 @@ export default function SinglePost() {
       }).catch(console.error);
   }
 
-
-
-
   const Author = async () => {
 
     await sanityClient.fetch(`*[_type =="author"]{
@@ -86,8 +83,11 @@ export default function SinglePost() {
               />
             </div>
             <hr />
+            <h3>Author</h3>
             <div>                 <img src={urlFor(authorImag?.authorImage).url()} width="100" />
-              <p style={{ color: "black" }}>{authorImag?.name}</p>
+              <p style={{ color: "#EA1E63" }}> Hey there. I'm {authorImag?.name} </p>
+              {/* <p style={{ color: "black" }}>{authorImag?.bio}</p> */}
+              <BlockContent />
             </div>
 
           </div>

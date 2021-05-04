@@ -1,5 +1,9 @@
- @import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+body {
+  background-image: url("./asset/tm-bg-slide-1.jpg");
+}
 
 .pie {
   -webkit-tap-highlight-color: transparent;
@@ -145,4 +149,4 @@
 }
 .active .hamburger path:nth-child(5) {
   transform: rotate(-45deg);
-} 
+}

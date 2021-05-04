@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './css/font-awesome.min.css';
+import './css/templatemo-blue.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

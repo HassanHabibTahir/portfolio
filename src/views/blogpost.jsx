@@ -34,17 +34,8 @@ export default function Blogpost() {
     document.body.classList.remove('active')
   }
 
-  // console.log(posts)
   return (
     <div>
-      {/* <div class="preloader">
-        <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
-        </div>
-      </div> */}
-
-
-
       <div class="pie pie1" onclick={HndleClose} >
         <div class="pie-color ">
           <Link to="/project" onClick={HndleClose}>
@@ -145,7 +136,7 @@ export default function Blogpost() {
         <div class="container">
           <div class="row" style={{ position: "relative", bottom: "10rem" }}>
             <div class="col-md-12 col-sm-12">
-              {/* <img style={{ width: "10rem", height: "12rem" }} src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile" /> */}
+
               <h1 class="tm-title bold shadow">BLOG POSTS</h1>
               <h1 class="white bold shadow">Welcome to my blog posts</h1>
             </div>
@@ -160,8 +151,6 @@ export default function Blogpost() {
               <Link to={"/post/" + items.slug.current} key={items.slug.current}>
                 <div key={index} class="col-md-4 col-sm-6" style={{ padding: "1rem", alignItems: "center", textAlign: "center", }} >
                   <div class="about" style={{ backgroundColor: "#02143C" }}>
-                    {/* <h3 class="accent">{index}</h3> */}
-                    {/* <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p> */}
                     <h4 style={{ color: "white" }}>{items.title}</h4>
                     <br />
                     <img src={items.mainImage.asset.url}
@@ -170,55 +159,10 @@ export default function Blogpost() {
                   </div>
                 </div>
               </Link>
-            )) : ''
-
-          /* {posts.map((items) => (
-        
-          )) || '' */}
+            )) : ''}
 
 
-          {/* <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6" style={{ padding: "1rem" }} >
-            <div class="about">
-              <h3 class="accent">Easy Profile</h3>
-              <h2>Bootstrap v3.3.5</h2>
-              <p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque elementum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
-            </div>
-          </div> */}
+
         </div>
       </section>
 
@@ -226,14 +170,13 @@ export default function Blogpost() {
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12">
-              <p>Copyright &copy; 2084 Your Easy Profile</p>
-              <ul class="social-icons">
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-google-plus"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>
-                <li><a href="#" class="fa fa-dribbble"></a></li>
-                <li><a href="#" class="fa fa-github"></a></li>
-                <li><a href="#" class="fa fa-behance"></a></li>
+              <p>Copyright &copy; {new Date().getFullYear()}</p>
+              <ul class="social-icons" >
+                <li style={{ margin: ".5rem" }}> <a href="https://www.facebook.com/LearnWithTeachField" target="_blank" class="fa fa-facebook"></a></li>
+
+                <li style={{ margin: ".5rem" }}> <a href="https://twitter.com/HassanHabibTah1" target="_blank" class="fa fa-twitter"></a></li>
+
+                <li style={{ margin: ".5rem" }}> <a href="https://github.com/HassanHabibTahir" target="_blank" class="fa fa-github"></a></li>
               </ul>
             </div>
           </div>
