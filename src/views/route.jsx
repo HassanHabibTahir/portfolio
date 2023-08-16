@@ -131,41 +131,59 @@ export default function Home() {
             <div class="col-md-12 col-sm-12">
               <img style={{ width: "10rem", height: "12rem" }} src="images/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile" />
               <h1 class="tm-title bold shadow">HASSAN HABIB TAHIR</h1>
-              <h1 class="white bold shadow">I AM A FULL MERN STACK DEVELOPER</h1>
-              <h3 ><a href="cer.pdf" target="_blank" style={{ color: "#EA1E63" }}>Certificate
-</a></h3>
+              <h1 class="white bold shadow">I AM A  MERN STACK AND WEB3 DEVELOPER</h1>
+              <h3 ><a href="https://www.linkedin.com/in/hassan-habib-tahir-b1a241169/" target="_blank" style={{
+                color: "#EA1E63", textDecoration: "none"
+              }}>LinkedIn
+              </a></h3>
             </div>
           </div>
         </div>
-      </header>
+      </header >
       <div>
         <section class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="about">
-                <h3 class="accent">Web Development</h3>
+                <h3 class="accent">Full Stack  Development </h3>
 
-                <p>I have deep knowledge about the web Development ,I am Full MERN Stack Developer.I am provide the service about the web Development I also online constructor.
-                I build and design website in HTML,CSS,JAVASCRIP,REACT JS, NODE JS ,EXPRESS JS ,MONGODB, DBMS(sql,nosql).
-              </p>
+                <p>Web3 Developer|Web2 Developer | JavaScript | React | Next.js | Node.js | TypeScript | IPFS | NFTs | Truffle | Hardhat | Drizzle | Web3.js | Ethers.js | AWS
+                  Highly skilled Javascript and Web3 Developer with a proven track record in the computer software industry. Proficient in Web Design, Cascading Style Sheets (CSS), HTML5, and Responsive Web Design.
+                  Key Skills:
+                  Programming Languages: JavaScript, TypeScript
+                  Frontend Frameworks: React, Next.js
+                  Backend Technologies: Node.js, Express.js
+                  Decentralized Technologies: IPFS, Web3, NFTs
+                  Blockchain Development: Truffle, Hardhat, Ethers.js
+                  Cloud Services: AWS (Amazon Web Services)
+                  Education:
+                  Bachelor of Science in Computer Science from Government College University, Faisalabad
+
+                </p>
 
                 <h3 class="accent">
                   Web Designing
-            </h3>
+                </h3>
                 <p>Command over converting PSD to pixel perfect HTML
-                I have deep knowledge about web designing , I design website in HTML ,CSS,SCSS ,material-ui,Bootstrap and Tailwind.
-              </p>
+                  I have deep knowledge about web designing , I design website in HTML ,HTML5,CSS,SCSS ,material-ui,Bootstrap and Tailwind, Web accessibility
+                </p>
 
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="skills">
                 <br />
-                <strong>online constructor</strong>
+                <strong>Constructor</strong>
                 <span class="pull-right">80%</span>
                 <div class="progress">
                   <div class="progress-bar progress-bar-primary" role="progressbar"
                     aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style={{ width: "80%" }}></div>
+                </div>
+                <strong>Web Designing</strong>
+                <span class="pull-right">85%</span>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-primary" role="progressbar"
+                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style={{ width: "85%" }}></div>
                 </div>
                 <strong>Web Development</strong>
                 <span class="pull-right">90%</span>
@@ -174,14 +192,13 @@ export default function Home() {
                     aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{ width: "90%" }}></div>
                 </div>
 
-                <strong>Web Designing</strong>
-                <span class="pull-right">85%</span>
+                <strong>web3 Dapps Development</strong>
+                <span class="pull-right">80%</span>
                 <div class="progress">
                   <div class="progress-bar progress-bar-primary" role="progressbar"
-                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style={{ width: "85%" }}></div>
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style={{ width: "80%" }}></div>
                 </div>
-
-                <strong>web3.js</strong>
+                <strong>Backend Development</strong>
                 <span class="pull-right">80%</span>
                 <div class="progress">
                   <div class="progress-bar progress-bar-primary" role="progressbar"
@@ -197,17 +214,20 @@ export default function Home() {
               <div class="education">
                 <h2 class="white">Education</h2>
                 <div class="education-content">
-                  <h4 class="education-title accent">Web Design and Development</h4>
-                  <div class="education-school">
-                    <h5>Starting from</h5><span></span>
-                    <h5>2019 January - 2020</h5>
-                  </div>
+                  <h4 class="education-title accent">BS Computer Science</h4>
                   <p class="education-description">
-                    I am MERN Stack Developer with bs Computer Science.I learn website designing and Development from GamicaCloud also internee in GamicaCloud 2019 present MERN Stack Development
+                    Government College University, Faisalabad
+                  </p>
+                </div>
+                <div class="education-content">
+                  <h4 class="education-title accent">Web Design and Development</h4>
 
-                  <a href="https://www.gamicacloud.com/" style={{ color: "blue" }}><strong>www.gamicacloud.com</strong></a>
-                  sql Database from Startups
-                  <a href="https://www.startups.com.pk" style={{ color: "blue" }}><strong> www.startups.com.pk.com</strong></a>
+                  <p class="education-description">
+                    As a React at Gamicacloud, I had the privilege of working with a dynamic team of developers, honing my skills in frontend web development and gaining valuable industry experience. During this internship, I contributed to building cutting-edge web applications using React and other modern web technologies.
+
+                    {/* <a href="https://www.gamicacloud.com/" style={{ color: "blue" }}><strong>www.gamicacloud.com</strong></a>
+                    sql Database from Startups
+                    <a href="https://www.startups.com.pk" style={{ color: "blue" }}><strong> www.startups.com.pk.com</strong></a> */}
 
                   </p>
                 </div>
@@ -217,15 +237,18 @@ export default function Home() {
               <div class="languages">
                 <p><strong>skills</strong>  </p>
                 <ul>
-                  <li>HTML</li>
-                  <li>css/SCSS</li>
-                  <li>material-ui,Bootstrap and Tailwind</li>
-                  <li>web3.js</li>
+                  <li>Web2 Development </li>
+                  <li>Web3 Development</li>
+                  <li>WEB Designing</li>
                   <li>JAVASCRIP</li>
                   <li>TYPESCRIPT</li>
                   <li>REACT JS</li>
+                  <li>Next.js</li>
                   <li>NODE JS</li>
-                  <li>DBMS</li>
+                  <li>NFTs</li>
+                  <li>IPFS</li>
+                  <li>AWS</li>
+
                 </ul>
               </div>
             </div>
@@ -236,8 +259,7 @@ export default function Home() {
             <div class="col-md-4 col-sm-12">
               <div class="contact">
                 <h2>Contact</h2>
-                <p><i class="fa fa-map-marker"></i> chiniot</p>
-                <p><i class="fa fa-phone"></i> 03341423749</p>
+                <p><i class="fa fa-phone"></i> 03341423749 | 03438709278</p>
                 <p><i class="fa fa-envelope"></i> hassanhabibtahir@mail.com</p>
                 <p><i class="fa fa-facebook-f"></i><a href="https://www.facebook.com/profile.php?id=100009237984857">HassanHabibTahir</a></p>
               </div>
@@ -273,6 +295,6 @@ export default function Home() {
           </div>
         </footer>
       </div>
-    </div>
+    </div >
   );
 }
